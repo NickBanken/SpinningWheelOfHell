@@ -1,0 +1,274 @@
+/*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+*/
+
+body
+{
+	font-family: Staatliches;
+	background:linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(./Hell.jpg);
+	background-position: center;
+	background-size: contain;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin:0;
+	overflow: hidden;
+
+}
+
+/* Sets the background image for the wheel */
+td.the_wheel
+{
+    background-image: url(./wheel_back2.png);
+    background-position: center;
+    background-repeat: none;
+}
+
+td{
+	position: relative;
+}
+
+.arrow{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+header{
+	background: #a3082d;
+	display: inline-block;
+	padding: 3.5rem;
+	position: relative;
+}
+.curtain{
+	position: absolute;
+	transform: scaleY(1.3);
+	top:0;
+}
+
+.left{
+	left: 0;
+	transform: scaleY(1.3) rotateY(180deg);
+}
+
+.right{
+	right: 0;
+}
+
+.play-again{
+	background: #a3082d;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+.billboard{
+	margin-top: -20px;
+	z-index: 10;
+}
+
+h1{
+	letter-spacing: .5rem;
+	color:gold;
+}
+
+.overlay {
+	z-index: 10;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	/* border-radius: 100%; */
+	background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,0) 70%, rgba(0,0,0,0.82) 80%);
+	/* box-shadow: 0px 0px 40px 250px rgba(0, 0, 0, 0.774) inset, 0px 0px 0px 100px rgba(0,0,0,0.5) */
+	
+  }
+
+  /* @media only screen and (max-width: 1160px) {
+	.overlay {
+		width: 180vw;
+		height: 180vw;
+	}
+  } */
+
+#circle {
+    background: rgb(255, 250, 223);
+    border-radius: 50%;
+    width: 25px;
+	height: 25px;
+	box-shadow:
+    0 0 20px 10px #fff,
+    0 0 35px 12px rgb(255, 238, 0),
+	0 0 80px 30px rgb(255, 238, 0);
+	position: absolute;
+}
+
+/*TOP*/
+
+#circle:nth-child(1){
+	top:15px;
+	left:20px;
+}
+
+#circle:nth-child(2){
+	top:15px;
+	left:125px;
+}
+
+#circle:nth-child(3){
+	top:15px;
+	left:230px;
+}
+
+#circle:nth-child(4){
+	top:15px;
+	left:330px;
+}
+
+#circle:nth-child(5){
+	top:15px;
+	left:430px;
+}
+
+#circle:nth-child(6){
+	top:15px;
+	left:540px;
+}
+
+#circle:nth-child(7){
+	top:15px;
+	left:640px;
+}
+
+#circle:nth-child(8){
+	top:15px;
+	left:750px;
+}
+
+/*BOTTOM*/
+
+
+#circle:nth-child(9){
+	bottom:15px;
+	left:20px;
+}
+
+#circle:nth-child(10){
+	bottom:15px;
+	left:125px;
+}
+
+#circle:nth-child(11){
+	bottom:15px;
+	left:230px;
+}
+
+#circle:nth-child(12){
+	bottom:15px;
+	left:330px;
+}
+
+#circle:nth-child(13){
+	bottom:15px;
+	left:430px;
+}
+
+#circle:nth-child(14){
+	bottom:15px;
+	left:540px;
+}
+
+#circle:nth-child(15){
+	bottom:15px;
+	left:640px;
+}
+
+#circle:nth-child(16){
+	bottom:15px;
+	left:750px;
+}
+
+
+
+#circle:nth-child(17){
+	bottom:15px;
+	left:815px;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+.spinner{
+	margin-bottom: -20px;
+	z-index: 500;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+
+#spin_button{
+	background: #a3082d;
+	color: gold;
+	text-align: center;
+	padding: 15px;
+}
